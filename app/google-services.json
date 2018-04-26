@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "500892652669",
+    "firebase_url": "https://matjari-f6dce.firebaseio.com",
+    "project_id": "matjari-f6dce",
+    "storage_bucket": "matjari-f6dce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500892652669:android:b188b790db39dd8b",
+        "android_client_info": {
+          "package_name": "com.sana.matjari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500892652669-u6qfh5krp3rlagco4lkufje7hv9ojo8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sana.matjari",
+            "certificate_hash": "cc0ec0cfef6e0f716bbb39379e991456a2241a4a"
+          }
+        },
+        {
+          "client_id": "500892652669-fpl44h69sr6disdpcrsfo81vhi4jj2vk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxHHQxMbk8q5AHJfFVspcUROYuqcKpHsg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500892652669-fpl44h69sr6disdpcrsfo81vhi4jj2vk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
