@@ -19,7 +19,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "FACELOG";
     private FirebaseAuth mAuth;
-    public TextView email,password;
+    public String email,password;
+    public TextView Email,Password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
