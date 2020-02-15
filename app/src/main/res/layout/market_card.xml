@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorWhiteBackGround"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:elevation="3dp">
+
+
+        <!-- Card view container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Second container -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <!-- Name and Picture container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/image_name"
+                            android:layout_width="52sp"
+                            android:layout_height="52sp"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/image_background"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:textColor="@color/colorWhiteBackGround"
+                            android:text="BIA"
+                            android:textSize="20sp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+                        <TextView
+                            android:id="@+id/market_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Amokrane d'Informatique"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGrey"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginRight="5dp">
+
+                                <ImageView
+                                    android:id="@+id/star1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_star_24dp"/>
+
+                                <ImageView
+                                    android:id="@+id/star2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_star_24dp"/>
+
+                                <ImageView
+                                    android:id="@+id/star3"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_star_half_24dp"/>
+
+                                <ImageView
+                                    android:id="@+id/star4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_star_border_24dp"/>
+
+                                <ImageView
+                                    android:id="@+id/star5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_star_border_24dp"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/region"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Rue Didouche Mourad N°15"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorGrey"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=" • "
+                                android:textSize="14dp"
+                                android:textColor="@color/colorGrey"/>
+
+                            <TextView
+                                android:id="@+id/wilaya"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Alger"
+                                android:textSize="14dp"
+                                android:textColor="@color/colorGrey"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/type_market"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="5dp"
+                            android:text="Boutique informatique"
+                            android:textColor="@color/colorGrey"
+                            android:layout_gravity="center"
+                            android:textSize="14dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/tags_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginTop="5dp"
+                            app:flexDirection="row_reverse"
+                            app:alignContent="flex_start"
+                            app:alignItems="flex_start"
+                            app:flexWrap="wrap"
+                            >
+
+                            <!-- Post Tags -->
+
+                            <TextView
+                                android:id="@+id/tag0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                            <TextView
+                                android:id="@+id/tag8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+                            <TextView
+                                android:id="@+id/tag9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+                            <TextView
+                                android:id="@+id/tag10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/tag_style"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="طلب تبرع بالدم"
+                                android:textColor="@color/colorWhiteBackGround"
+                                android:textSize="12dp"
+                                android:textStyle="normal"
+                                android:visibility="gone"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+                            <!-- Post Tags -->
+
+                        </com.google.android.flexbox.FlexboxLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

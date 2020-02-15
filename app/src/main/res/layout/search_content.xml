@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/search_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipToPadding="false"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical"
+    android:isScrollContainer="false"
+    android:background="@drawable/background2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/searcher"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorGrey"
+            android:textColorHint="@color/colorGreyTransparent"
+            android:hint="Rechercher ..."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:inputType="text"
+            app:backgroundTint="@color/colorGreyTransparent"
+            android:drawableStart="@drawable/ic_search_focus_24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/vendeur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryTag"
+                    android:buttonTint="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:checked="true"
+                    android:textStyle="normal"
+                    android:text="Magasin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OU"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:textStyle="normal"/>
+
+
+                <RadioButton
+                    android:id="@+id/product"
+                    android:checked="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryTag"
+                    android:buttonTint="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:text="Produit"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtre"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/colorGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/tags_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:flexDirection="row_reverse"
+                app:alignContent="flex_start"
+                app:alignItems="flex_start"
+                app:flexWrap="wrap"
+                android:layout_marginBottom="10dp"
+                >
+
+                <!-- Post Tags -->
+
+
+                <TextView
+                    android:id="@+id/tag0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Par exemple"
+                    android:textColor="@color/colorWhiteBackGround"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:id="@+id/tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Par exemple"
+                    android:textColor="@color/colorWhiteBackGround"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:id="@+id/tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Par exemple"
+                    android:textColor="@color/colorWhiteBackGround"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:id="@+id/tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Par exemple"
+                    android:textColor="@color/colorWhiteBackGround"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:id="@+id/tag4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Par exemple"
+                    android:textColor="@color/colorWhiteBackGround"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:id="@+id/tag5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Par exemple"
+                    android:textColor="@color/colorWhiteBackGround"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Résultats"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="14dp"
+            android:visibility="gone"
+            android:textColor="@color/colorGrey"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:nestedScrollingEnabled="false"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
